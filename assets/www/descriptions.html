@@ -28,12 +28,28 @@
 		    document.getElementById('applicationTitle').innerHTML = '<div class="titleIcon"><img src="img/backgrounds/koryoToolsBackground.png" class="img-responsive"></div><span class="title main-title">' + applicationTitleMessage + '</span>';
 		    jQuery.i18n.prop('precogCardNameMessage');
 		    document.getElementById('precogCardName').innerHTML = precogCardNameMessage;
+		    jQuery.i18n.prop('precogCardTypeLabelMessage');
+		    document.getElementById('precogCardTypeLabel').innerHTML = precogCardTypeLabelMessage;
+		    jQuery.i18n.prop('precogCardTypeMessage');
+		    document.getElementById('precogCardType').innerHTML = precogCardTypeMessage;
 		    jQuery.i18n.prop('precogCardQuantityLabelMessage');
 		    document.getElementById('precogCardQuantityLabel').innerHTML = precogCardQuantityLabelMessage;
 		    jQuery.i18n.prop('precogCardQuantityMessage');
 		    document.getElementById('precogCardQuantity').innerHTML = precogCardQuantityMessage;
 		    jQuery.i18n.prop('precogCardDetailMessage');
 		    document.getElementById('precogCardDetail').innerHTML = precogCardDetailMessage;
+		    jQuery.i18n.prop('espionCardNameMessage');
+		    document.getElementById('espionCardName').innerHTML = espionCardNameMessage;
+		    jQuery.i18n.prop('espiongCardTypeLabelMessage');
+		    document.getElementById('espionCardTypeLabel').innerHTML = espionCardTypeLabelMessage;
+		    jQuery.i18n.prop('espionCardTypeMessage');
+		    document.getElementById('espionCardType').innerHTML = espionCardTypeMessage;
+		    jQuery.i18n.prop('espiongCardQuantityLabelMessage');
+		    document.getElementById('espionCardQuantityLabel').innerHTML = espionCardQuantityLabelMessage;
+		    jQuery.i18n.prop('espionCardQuantityMessage');
+		    document.getElementById('espionCardQuantity').innerHTML = espionCardQuantityMessage;
+		    jQuery.i18n.prop('espionCardDetailMessage');
+		    document.getElementById('espionCardDetail').innerHTML = espionCardDetailMessage;
 	      }
 	    });
 	  }
@@ -72,6 +88,10 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardName" id="precogCardName"></div>
               </div>
               <div class="row">
+                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 cardDetailLabel" id="precogCardTypeLabel"></div>
+                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 cardDetailValue" id="precogCardType"></div>
+              </div>
+              <div class="row">
                 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 cardDetailLabel" id="precogCardQuantityLabel"></div>
                 <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 cardDetailValue" id="precogCardQuantity"></div>
               </div>
@@ -85,7 +105,30 @@
           </div>
         </div>
         <div class="tab-pane" id="espion">
-          <img src="img/cards/big/KORYU_CARTE_ESPION_2.png" class="img-responsive cardImage">
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <img src="img/cards/big/KORYU_CARTE_ESPION_2.png" class="img-responsive cardImage">
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardName" id="espionCardName"></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 cardDetailLabel" id="espionCardTypeLabel"></div>
+                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 cardDetailValue" id="espionCardType"></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 cardDetailLabel" id="espionCardQuantityLabel"></div>
+                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 cardDetailValue" id="espionCardQuantity"></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">&nbsp;</div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardDetailValue" id="espionCardDetail"></div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="tab-pane" id="senateur">
           <img src="img/cards/big/KORYU_CARTE_SENATEUR_3.png" class="img-responsive cardImage">
