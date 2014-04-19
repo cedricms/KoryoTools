@@ -78,6 +78,19 @@
 		    document.getElementById('pretreCardQuantity').innerHTML = pretreCardQuantityMessage;
 		    jQuery.i18n.prop('pretreCardDetailMessage');
 		    document.getElementById('pretreCardDetail').innerHTML = pretreCardDetailMessage;
+		    
+		    jQuery.i18n.prop('armateurCardNameMessage');
+		    document.getElementById('armateurCardName').innerHTML = armateurCardNameMessage;
+		    jQuery.i18n.prop('armateurCardTypeLabelMessage');
+		    document.getElementById('armateurCardTypeLabel').innerHTML = armateurCardTypeLabelMessage;
+		    jQuery.i18n.prop('armateurCardTypeMessage');
+		    document.getElementById('armateurCardType').innerHTML = armateurCardTypeMessage;
+		    jQuery.i18n.prop('armateurCardQuantityLabelMessage');
+		    document.getElementById('armateurCardQuantityLabel').innerHTML = armateurCardQuantityLabelMessage;
+		    jQuery.i18n.prop('armateurCardQuantityMessage');
+		    document.getElementById('armateurCardQuantity').innerHTML = armateurCardQuantityMessage;
+		    jQuery.i18n.prop('armateurCardDetailMessage');
+		    document.getElementById('armateurCardDetail').innerHTML = armateurCardDetailMessage;
 	      }
 	    });
 	  }
@@ -211,7 +224,30 @@
           </div>
         </div>
         <div class="tab-pane" id="armateur">
-          <img src="img/cards/big/KORYU_CARTE_ARMATEUR_5.png" class="img-responsive cardImage">
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <img src="img/cards/big/KORYU_CARTE_ARMATEUR_5.png" class="img-responsive cardImage">
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardName" id="armateurCardName"></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 cardDetailLabel" id="armateurCardTypeLabel"></div>
+                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 cardDetailValue" id="armateurCardType"></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 cardDetailLabel" id="armateurCardQuantityLabel"></div>
+                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 cardDetailValue" id="armateurCardQuantity"></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">&nbsp;</div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardDetailValue" id="armateurCardDetail"></div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="tab-pane" id="banquier">
           <img src="img/cards/big/KORYU_CARTE_BANQUIER_6.png" class="img-responsive cardImage">
