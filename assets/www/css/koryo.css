@@ -1,6 +1,17 @@
+.cardDetailLabel {
+  color: #666;
+  font-size : 4rem;
+  font-weight : bold;
+}
+
+.cardDetailValue{
+  font-size : 4rem;
+}
+
 .cardImage {
-  border: 2px solid black;
+  border: 4px solid black;
   border-radius: 2rem;
+  margin: 2rem;
 }
 
 .cardName {
