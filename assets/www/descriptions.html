@@ -25,7 +25,7 @@
 		  language:lang, 
 		  callback: function() {
 		    jQuery.i18n.prop('applicationTitleMessage');
-		    document.getElementById('applicationTitle').innerHTML='<span class="title main-title">' + applicationTitleMessage + '</span>';
+		    document.getElementById('applicationTitle').innerHTML='<div class="titleIcon"><img src="img/backgrounds/koryoToolsBackground.png" class="img-responsive"></div><span class="title main-title">' + applicationTitleMessage + '</span>';
 		    /*jQuery.i18n.prop('framesLegendMessage');
 		    document.getElementById('framesLegend').innerHTML=framesLegendMessage;
 		    jQuery.i18n.prop('createFrameMessage');
@@ -73,63 +73,58 @@
     <h1 class="pageTitle" id="applicationTitle"></h1>
     <div class="pageSection">
       <ul class="nav nav-tabs">
-        <li class="active"><a href="#systems" data-toggle="tab">Systems</a></li>
-        <li><a href="#dice" data-toggle="tab">Dice</a></li>
-        <li><a href="#special" data-toggle="tab">Special</a></li>
+        <li class="active"><a href="#precog" data-toggle="tab"><img src="img/cards/small/KORYU_CARTE_PRECOG_1-185x300.png" class="img-responsive tabCardImage"></a></li>
+        <li><a href="#espion" data-toggle="tab"><img src="img/cards/small/KORYU_CARTE_ESPION_2-185x300.png" class="img-responsive tabCardImage"></a></li>
+        <li><a href="#senateur" data-toggle="tab"><img src="img/cards/small/KORYU_CARTE_SENATEUR_3-185x300.png" class="img-responsive tabCardImage"></a></li>
+        <li><a href="#pretre" data-toggle="tab"><img src="img/cards/small/KORYU_CARTE_PRETRE_4-185x300.png" class="img-responsive tabCardImage"></a></li>
+        <li><a href="#armateur" data-toggle="tab"><img src="img/cards/small/KORYU_CARTE_ARMATEUR_5-185x300.png" class="img-responsive tabCardImage"></a></li>
+        <li><a href="#banquier" data-toggle="tab"><img src="img/cards/small/KORYU_CARTE_BANQUIER_6-185x300.png" class="img-responsive tabCardImage"></a></li>
+        <li><a href="#gardien" data-toggle="tab"><img src="img/cards/small/KORYU_CARTE_GARDIEN_7-185x300.png" class="img-responsive tabCardImage"></a></li>
+        <li><a href="#journaliste" data-toggle="tab"><img src="img/cards/small/KORYU_CARTE_JOURNALISTE_8-185x300.png" class="img-responsive tabCardImage"></a></li>
+        <li><a href="#marchand" data-toggle="tab"><img src="img/cards/small/KORYU_CARTE_MARCHAND_9-185x300.png" class="img-responsive tabCardImage"></a></li>
+        <li><a href="#barbares" data-toggle="tab"><img src="img/cards/small/KORYU_CARTE_BARBARES_-1-185x300.png" class="img-responsive tabCardImage"></a></li>
+        <li><a href="#lobbying" data-toggle="tab"><img src="img/cards/small/KORYU_CARTE_LOBBYING_-1-185x300.png" class="img-responsive tabCardImage"></a></li>
       </ul>
       <div class="tab-content">
-        <div class="tab-pane active" id="systems">
-          Systems
+        <div class="tab-pane active" id="precog">
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <img src="img/cards/big/KORYU_CARTE_PRECOG_1.png" class="img-responsive cardImage">
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">Details</div>
+          </div>
         </div>
-        <div class="tab-pane" id="dice">
-          Dice
+        <div class="tab-pane" id="espion">
+          <img src="img/cards/big/KORYU_CARTE_ESPION_2.png" class="img-responsive cardImage">
         </div>
-        <div class="tab-pane" id="special">
-          Special
+        <div class="tab-pane" id="senateur">
+          <img src="img/cards/big/KORYU_CARTE_SENATEUR_3.png" class="img-responsive cardImage">
+        </div>
+        <div class="tab-pane" id="pretre">
+          <img src="img/cards/big/KORYU_CARTE_PRETRE_4.png" class="img-responsive cardImage">
+        </div>
+        <div class="tab-pane" id="armateur">
+          <img src="img/cards/big/KORYU_CARTE_ARMATEUR_5.png" class="img-responsive cardImage">
+        </div>
+        <div class="tab-pane" id="banquier">
+          <img src="img/cards/big/KORYU_CARTE_BANQUIER_6.png" class="img-responsive cardImage">
+        </div>
+        <div class="tab-pane" id="gardien">
+          <img src="img/cards/big/KORYU_CARTE_GARDIEN_7.png" class="img-responsive cardImage">
+        </div>
+        <div class="tab-pane" id="journaliste">
+          <img src="img/cards/big/KORYU_CARTE_JOURNALISTE_8.png" class="img-responsive cardImage">
+        </div>
+        <div class="tab-pane" id="marchand">
+          <img src="img/cards/big/KORYU_CARTE_MARCHAND_9.png" class="img-responsive cardImage">
+        </div>
+        <div class="tab-pane" id="barbares">
+          <img src="img/cards/big/KORYU_CARTE_BARBARES_-1.png" class="img-responsive cardImage">
+        </div>
+        <div class="tab-pane" id="lobbying">
+          <img src="img/cards/big/KORYU_CARTE_LOBBYING_-1.png" class="img-responsive cardImage">
         </div>
       </div>
     </div>
-    <!--   <div class="pageSection">
-        <div class="row">
-          <div class="col-sm-6 col-md-4 hidden-xs">
-            <img src="img/frames/MFZT_Chub.png" class="img-responsive" style="position: relative; bottom: 20px; right: 20px;">
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-8 menu">
-            <div class="row">
-              <div class="col-md-6">
-              	<fieldset class="menu">
-              		<legend class="menu" id="framesLegend"></legend>
-              		<div class="largeButton" id="createFrame"></div>
-              		<div class="largeButton" id="listFrames"></div>
-                </fieldset>
-                <fieldset class="menu">
-          			<legend class="menu" id="companiesLegend"></legend>
-          			<div class="largeButton" id="companyCreationGuidelines"></div>
-          			<div class="largeButton" id="createCompany"></div>
-          			<div class="largeButton" id="listCompanies"></div>
-          		</fieldset>
-              </div>
-              <div class="col-md-6">
-              	<fieldset class="menu">
-              		<legend class="menu" id="gamePreparationLegend"></legend>
-              		<div class="largeButton" id="settingUpTheBattlefield"></div>
-              	</fieldset>
-              	<fieldset class="menu">
-                  <legend class="menu" id="resourcesLegend"></legend>
-                  <div class="largeButton" id="usefulLinks"></div>
-                  <div class="largeButton" id="faq"></div>
-                  <div class="largeButton" id="about"></div>
-                </fieldset>
-                <fieldset class="menu">
-                  <legend class="menu" id="administrationToolsLegend"></legend>
-                  <div class="largeButton" id="resetDatabase"></div>
-                  <!--div class="largeButton" id="loadTestCompanies"></div-->
-                <!--</fieldset>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
   </body>
 </html>
