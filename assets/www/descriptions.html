@@ -32,6 +32,8 @@
 		    document.getElementById('precogCardQuantityLabel').innerHTML = precogCardQuantityLabelMessage;
 		    jQuery.i18n.prop('precogCardQuantityMessage');
 		    document.getElementById('precogCardQuantity').innerHTML = precogCardQuantityMessage;
+		    jQuery.i18n.prop('precogCardDetailMessage');
+		    document.getElementById('precogCardDetail').innerHTML = precogCardDetailMessage;
 	      }
 	    });
 	  }
@@ -72,6 +74,12 @@
               <div class="row">
                 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 cardDetailLabel" id="precogCardQuantityLabel"></div>
                 <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 cardDetailValue" id="precogCardQuantity"></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">&nbsp;</div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardDetailValue" id="precogCardDetail"></div>
               </div>
             </div>
           </div>

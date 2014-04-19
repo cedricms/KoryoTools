@@ -6,6 +6,9 @@
 
 .cardDetailValue{
   font-size : 4rem;
+  /*text-align : justify;*/
+  padding-left : 2rem;
+  padding-right : 2rem;
 }
 
 .cardImage {
