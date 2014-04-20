@@ -130,6 +130,19 @@
 		    document.getElementById('journalisteCardQuantity').innerHTML = journalisteCardQuantityMessage;
 		    jQuery.i18n.prop('journalisteCardDetailMessage');
 		    document.getElementById('journalisteCardDetail').innerHTML = journalisteCardDetailMessage;
+		    
+		    jQuery.i18n.prop('marchandCardNameMessage');
+		    document.getElementById('marchandCardName').innerHTML = marchandCardNameMessage;
+		    jQuery.i18n.prop('marchandCardTypeLabelMessage');
+		    document.getElementById('marchandCardTypeLabel').innerHTML = marchandCardTypeLabelMessage;
+		    jQuery.i18n.prop('marchandCardTypeMessage');
+		    document.getElementById('marchandCardType').innerHTML = marchandCardTypeMessage;
+		    jQuery.i18n.prop('marchandCardQuantityLabelMessage');
+		    document.getElementById('marchandCardQuantityLabel').innerHTML = marchandCardQuantityLabelMessage;
+		    jQuery.i18n.prop('marchandCardQuantityMessage');
+		    document.getElementById('marchandCardQuantity').innerHTML = marchandCardQuantityMessage;
+		    jQuery.i18n.prop('marchandCardDetailMessage');
+		    document.getElementById('marchandCardDetail').innerHTML = marchandCardDetailMessage;
 	      }
 	    });
 	  }
@@ -367,7 +380,30 @@
           </div>
         </div>
         <div class="tab-pane" id="marchand">
-          <img src="img/cards/big/KORYU_CARTE_MARCHAND_9.png" class="img-responsive cardImage">
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <img src="img/cards/big/KORYU_CARTE_MARCHAND_9.png" class="img-responsive cardImage">
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardName" id="marchandCardName"></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 cardDetailLabel" id="marchandCardTypeLabel"></div>
+                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 cardDetailValue" id="marchandCardType"></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 cardDetailLabel" id="marchandCardQuantityLabel"></div>
+                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 cardDetailValue" id="marchandCardQuantity"></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">&nbsp;</div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardDetailValue" id="marchandCardDetail"></div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="tab-pane" id="barbares">
           <img src="img/cards/big/KORYU_CARTE_BARBARES_-1.png" class="img-responsive cardImage">
