@@ -156,6 +156,19 @@
 		    document.getElementById('barbaresCardQuantity').innerHTML = barbaresCardQuantityMessage;
 		    jQuery.i18n.prop('barbaresCardDetailMessage');
 		    document.getElementById('barbaresCardDetail').innerHTML = barbaresCardDetailMessage;
+		    
+		    jQuery.i18n.prop('lobbyingCardNameMessage');
+		    document.getElementById('lobbyingCardName').innerHTML = lobbyingCardNameMessage;
+		    jQuery.i18n.prop('lobbyingCardTypeLabelMessage');
+		    document.getElementById('lobbyingCardTypeLabel').innerHTML = lobbyingCardTypeLabelMessage;
+		    jQuery.i18n.prop('lobbyingCardTypeMessage');
+		    document.getElementById('lobbyingCardType').innerHTML = lobbyingCardTypeMessage;
+		    jQuery.i18n.prop('lobbyingCardQuantityLabelMessage');
+		    document.getElementById('lobbyingCardQuantityLabel').innerHTML = lobbyingCardQuantityLabelMessage;
+		    jQuery.i18n.prop('lobbyingCardQuantityMessage');
+		    document.getElementById('lobbyingCardQuantity').innerHTML = lobbyingCardQuantityMessage;
+		    jQuery.i18n.prop('lobbyingCardDetailMessage');
+		    document.getElementById('lobbyingCardDetail').innerHTML = lobbyingCardDetailMessage;
 	      }
 	    });
 	  }
@@ -445,7 +458,30 @@
           </div>
         </div>
         <div class="tab-pane" id="lobbying">
-          <img src="img/cards/big/KORYU_CARTE_LOBBYING_-1.png" class="img-responsive cardImage">
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <img src="img/cards/big/KORYU_CARTE_LOBBYING_-1.png" class="img-responsive cardImage">
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardName" id="lobbyingCardName"></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 cardDetailLabel" id="lobbyingCardTypeLabel"></div>
+                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 cardDetailValue" id="lobbyingCardType"></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 cardDetailLabel" id="lobbyingCardQuantityLabel"></div>
+                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 cardDetailValue" id="lobbyingCardQuantity"></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">&nbsp;</div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardDetailValue" id="lobbyingCardDetail"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
