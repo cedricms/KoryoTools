@@ -1,3 +1,10 @@
+.aboutButton {
+  background : url('../img/blankPixel.png');
+  border : 0px;
+  margin-left : 20rem;
+  width : 10rem;
+}
+
 .cardDetailLabel {
   color: #666;
   font-size : 4rem;

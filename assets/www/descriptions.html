@@ -25,7 +25,7 @@
 		  language:lang, 
 		  callback: function() {
 		    jQuery.i18n.prop('applicationTitleMessage');
-		    document.getElementById('applicationTitle').innerHTML = '<div class="titleIcon"><img src="img/backgrounds/koryoToolsBackground.png" class="img-responsive"></div><span class="title main-title">' + applicationTitleMessage + '</span>';
+		    document.getElementById('applicationTitle').innerHTML = '<div class="titleIcon"><img src="img/backgrounds/koryoToolsBackground.png" class="img-responsive"></div><span class="title main-title">' + applicationTitleMessage + '<button type="button" class="btn btn-default aboutButton" data-toggle="modal" data-target="#aboutModal"><img class="img-responsive" src="./img/icons/info.png"/></button></span>';
 		    
 		    jQuery.i18n.prop('precogCardNameMessage');
 		    document.getElementById('precogCardName').innerHTML = precogCardNameMessage;
@@ -182,6 +182,43 @@
   </head>
   <body class="home">
     <h1 class="pageTitle" id="applicationTitle"></h1>
+    <div id="aboutModal" class="modal fade">
+	  <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- dialog body -->
+          <div class="modal-body clearfix">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="row">
+              <!-- ul class="nav nav-pills nav-stacked col-xs-6 col-sm-3 col-md-2">
+                <li><a href="#" id="handToHandAttacksLabel"></a></li>
+                <li><a href="#" id="rangedAttackNoCoverLabel"></a></li>
+                <li><a href="#" id="rangedAttackNormalCoverLabel"></a></li>
+                <li><a href="#" id="rangedAttackCoveredByMobileFrameLabel"></a></li>
+                <li><a href="#" id="attacksAgainstTerrainLabel"></a></li>
+              </ul>
+              <div class="tab-content col-xs-6 col-sm-9 col-md-10">
+                <div class="tab-pane active" id="handToHandAttacksTab">
+                  <img src="./img/damage/handToHandAttacks.png" class="img-responsive" />
+                </div>
+                <div class="tab-pane" id="rangedAttackNoCoverTab">
+                  <img src="./img/damage/rangedAttackNoCover.png" class="img-responsive" />
+                </div>
+                <div class="tab-pane" id="rangedAttackNormalCoverTab">
+                  <img src="./img/damage/rangedAttackNormalCover.png" class="img-responsive" />
+                </div>
+                <div class="tab-pane" id="rangedAttackCoveredByMobileFrameTab">
+                  <img src="./img/damage/rangedAttackCoveredByMobileFrame.png" class="img-responsive" />
+                </div>
+                <div class="tab-pane" id="attacksAgainstTerrainTab">
+                  <img src="./img/damage/attacksAgainstTerrain.png" class="img-responsive" />
+                </div>
+              </div-->
+            </div>
+            <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+	  </div>
+	</div>
     <div class="pageSection">
       <ul class="nav nav-tabs">
         <li class="active"><a href="#precog" data-toggle="tab"><img src="img/cards/small/KORYU_CARTE_PRECOG_1-185x300.png" class="img-responsive tabCardImage"></a></li>
