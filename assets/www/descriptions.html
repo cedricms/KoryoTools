@@ -143,6 +143,19 @@
 		    document.getElementById('marchandCardQuantity').innerHTML = marchandCardQuantityMessage;
 		    jQuery.i18n.prop('marchandCardDetailMessage');
 		    document.getElementById('marchandCardDetail').innerHTML = marchandCardDetailMessage;
+		    
+		    jQuery.i18n.prop('barbaresCardNameMessage');
+		    document.getElementById('barbaresCardName').innerHTML = barbaresCardNameMessage;
+		    jQuery.i18n.prop('barbaresCardTypeLabelMessage');
+		    document.getElementById('barbaresCardTypeLabel').innerHTML = barbaresCardTypeLabelMessage;
+		    jQuery.i18n.prop('barbaresCardTypeMessage');
+		    document.getElementById('barbaresCardType').innerHTML = barbaresCardTypeMessage;
+		    jQuery.i18n.prop('barbaresCardQuantityLabelMessage');
+		    document.getElementById('barbaresCardQuantityLabel').innerHTML = barbaresCardQuantityLabelMessage;
+		    jQuery.i18n.prop('barbaresCardQuantityMessage');
+		    document.getElementById('barbaresCardQuantity').innerHTML = barbaresCardQuantityMessage;
+		    jQuery.i18n.prop('barbaresCardDetailMessage');
+		    document.getElementById('barbaresCardDetail').innerHTML = barbaresCardDetailMessage;
 	      }
 	    });
 	  }
@@ -406,7 +419,30 @@
           </div>
         </div>
         <div class="tab-pane" id="barbares">
-          <img src="img/cards/big/KORYU_CARTE_BARBARES_-1.png" class="img-responsive cardImage">
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <img src="img/cards/big/KORYU_CARTE_BARBARES_-1.png" class="img-responsive cardImage">
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardName" id="barbaresCardName"></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 cardDetailLabel" id="barbaresCardTypeLabel"></div>
+                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 cardDetailValue" id="barbaresCardType"></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 cardDetailLabel" id="barbaresCardQuantityLabel"></div>
+                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 cardDetailValue" id="barbaresCardQuantity"></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">&nbsp;</div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardDetailValue" id="barbaresCardDetail"></div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="tab-pane" id="lobbying">
           <img src="img/cards/big/KORYU_CARTE_LOBBYING_-1.png" class="img-responsive cardImage">
