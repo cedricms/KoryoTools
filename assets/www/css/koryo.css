@@ -1,7 +1,7 @@
 .aboutButton {
   background : url('../img/blankPixel.png');
   border : 0px;
-  margin-left : 20rem;
+  margin-left : 10rem;
   width : 10rem;
 }
 
@@ -21,12 +21,12 @@
 
 .cardDetailLabel {
   color: #666;
-  font-size : 4rem;
+  font-size : 3rem;
   font-weight : bold;
 }
 
 .cardDetailValue{
-  font-size : 4rem;
+  font-size : 3rem;
   /*text-align : justify;*/
   padding-left : 2rem;
   padding-right : 2rem;
@@ -40,7 +40,7 @@
 
 .cardName {
   color: #666;
-  font-size : 8rem;
+  font-size : 6rem;
   font-weight : bold;
   text-align : center;
 }
@@ -67,7 +67,7 @@
 
 .pageTitle .title {
   display: block;
-  font-size : 8rem;
+  font-size : 6rem;
   font-weight : bold;
   margin: 1rem 0 1rem 5rem;
 }

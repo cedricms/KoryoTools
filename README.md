@@ -12,4 +12,5 @@ This application is based on the following frameworks :
 	
 Devices tested on :
 
-	*) Google Nexus 5.
+	*) Google Nexus 5;
+	*) Google Nexus 7.
