@@ -25,7 +25,7 @@
 		  language:lang, 
 		  callback: function() {
 		    jQuery.i18n.prop('applicationTitleMessage');
-		    document.getElementById('applicationTitle').innerHTML = '<div class="titleIcon"><img src="./img/backgrounds/koryoToolsBackground.png" class="img-responsive"></div><span class="title main-title">' + applicationTitleMessage + '<button type="button" class="btn btn-default aboutButton" data-toggle="modal" data-target="#aboutModal"><img class="img-responsive" src="./img/icons/info.png"/></button></span>';
+		    document.getElementById('applicationTitle').innerHTML = '<div class="row"><div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><div class="titleIcon"><img src="./img/backgrounds/koryoToolsBackground.png" class="img-responsive"></div></div><div class="col-xs-8 col-sm-8 col-md-8 col-lg-8"><span class="title main-title">' + applicationTitleMessage + '</span></div><div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><button type="button" class="btn btn-default aboutButton" data-toggle="modal" data-target="#aboutModal"><img class="img-responsive" src="./img/icons/info.png"/></button></div>';
 		    
 		    jQuery.i18n.prop('jeuCreeParMessage');
 		    document.getElementById('jeuCreePar').innerHTML = jeuCreeParMessage;

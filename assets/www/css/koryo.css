@@ -1,7 +1,6 @@
 .aboutButton {
   background : url('../img/blankPixel.png');
   border : 0px;
-  margin-left : 10rem;
   width : 10rem;
 }
 
@@ -95,7 +94,6 @@
 }
 
 .titleIcon {
-  float : left;
   margin-right : 2rem;
   width : 15rem;
 }
