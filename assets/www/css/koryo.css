@@ -54,6 +54,10 @@
   font-weight : bold;
 }
 
+.nav>li>a {
+  padding: 0.5rem 0.5rem;
+}
+
 .pageTitle {
   /*background: #666;*/
   background: linear-gradient(to right, #666 , #ddd);
@@ -90,7 +94,7 @@
 .tabCardImage {
   border: 1px solid black;
   border-radius: 0.5rem;
-  width : 6.25rem;
+  width : 8.4rem;
 }
 
 .titleIcon {
