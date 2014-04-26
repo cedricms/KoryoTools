@@ -15,6 +15,8 @@
       // load I18N bundles
       jQuery(document).ready(function() {
     	initLanguages();
+    	
+    	initTabLinkActions();
 	  });
 		
 	  function loadBundles(lang) {
@@ -246,17 +248,17 @@
 	</div>
     <div class="pageSection">
       <ul class="nav nav-tabs">
-        <li class="active"><a href="#precog" data-toggle="tab"><img src="img/cards/small/KORYU_CARTE_PRECOG_1-185x300.png" class="img-responsive tabCardImage"></a></li>
-        <li><a href="#espion" data-toggle="tab"><img src="img/cards/small/KORYU_CARTE_ESPION_2-185x300.png" class="img-responsive tabCardImage"></a></li>
-        <li><a href="#senateur" data-toggle="tab"><img src="img/cards/small/KORYU_CARTE_SENATEUR_3-185x300.png" class="img-responsive tabCardImage"></a></li>
-        <li><a href="#pretre" data-toggle="tab"><img src="img/cards/small/KORYU_CARTE_PRETRE_4-185x300.png" class="img-responsive tabCardImage"></a></li>
-        <li><a href="#armateur" data-toggle="tab"><img src="img/cards/small/KORYU_CARTE_ARMATEUR_5-185x300.png" class="img-responsive tabCardImage"></a></li>
-        <li><a href="#banquier" data-toggle="tab"><img src="img/cards/small/KORYU_CARTE_BANQUIER_6-185x300.png" class="img-responsive tabCardImage"></a></li>
-        <li><a href="#gardien" data-toggle="tab"><img src="img/cards/small/KORYU_CARTE_GARDIEN_7-185x300.png" class="img-responsive tabCardImage"></a></li>
-        <li><a href="#journaliste" data-toggle="tab"><img src="img/cards/small/KORYU_CARTE_JOURNALISTE_8-185x300.png" class="img-responsive tabCardImage"></a></li>
-        <li><a href="#marchand" data-toggle="tab"><img src="img/cards/small/KORYU_CARTE_MARCHAND_9-185x300.png" class="img-responsive tabCardImage"></a></li>
-        <li><a href="#barbares" data-toggle="tab"><img src="img/cards/small/KORYU_CARTE_BARBARES_-1-185x300.png" class="img-responsive tabCardImage"></a></li>
-        <li><a href="#lobbying" data-toggle="tab"><img src="img/cards/small/KORYU_CARTE_LOBBYING_-1-185x300.png" class="img-responsive tabCardImage"></a></li>
+        <li class="active"><a href="#precog" data-toggle="tab" id="precogTab"><img src="img/cards/small/KORYU_CARTE_PRECOG_1-185x300.png" class="img-responsive tabCardImage"></a></li>
+        <li><a href="#espion" data-toggle="tab" id="espionTab"><img src="img/cards/small/KORYU_CARTE_ESPION_2-185x300.png" class="img-responsive tabCardImage"></a></li>
+        <li><a href="#senateur" data-toggle="tab" id="senateurTab"><img src="img/cards/small/KORYU_CARTE_SENATEUR_3-185x300.png" class="img-responsive tabCardImage"></a></li>
+        <li><a href="#pretre" data-toggle="tab" id="pretreTab"><img src="img/cards/small/KORYU_CARTE_PRETRE_4-185x300.png" class="img-responsive tabCardImage"></a></li>
+        <li><a href="#armateur" data-toggle="tab" id="armateurTab"><img src="img/cards/small/KORYU_CARTE_ARMATEUR_5-185x300.png" class="img-responsive tabCardImage"></a></li>
+        <li><a href="#banquier" data-toggle="tab" id="banquierTab"><img src="img/cards/small/KORYU_CARTE_BANQUIER_6-185x300.png" class="img-responsive tabCardImage"></a></li>
+        <li><a href="#gardien" data-toggle="tab" id="gardienTab"><img src="img/cards/small/KORYU_CARTE_GARDIEN_7-185x300.png" class="img-responsive tabCardImage"></a></li>
+        <li><a href="#journaliste" data-toggle="tab" id="journalisteTab"><img src="img/cards/small/KORYU_CARTE_JOURNALISTE_8-185x300.png" class="img-responsive tabCardImage"></a></li>
+        <li><a href="#marchand" data-toggle="tab" id="marchandTab"><img src="img/cards/small/KORYU_CARTE_MARCHAND_9-185x300.png" class="img-responsive tabCardImage"></a></li>
+        <li><a href="#barbares" data-toggle="tab" id="barbaresTab"><img src="img/cards/small/KORYU_CARTE_BARBARES_-1-185x300.png" class="img-responsive tabCardImage"></a></li>
+        <li><a href="#lobbying" data-toggle="tab" id="lobbyingTab"><img src="img/cards/small/KORYU_CARTE_LOBBYING_-1-185x300.png" class="img-responsive tabCardImage"></a></li>
       </ul>
       <div class="tab-content">
         <div class="tab-pane active" id="precog">
