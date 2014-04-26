@@ -51,3 +51,7 @@ function initLanguages() {
 	userLang = userLang.substring(0,2);
 	loadBundles(userLang);
 }
+
+function saveLanguage() {
+	
+}

@@ -27,22 +27,22 @@
 		  language:lang, 
 		  callback: function() {
 		    jQuery.i18n.prop('applicationTitleMessage');
-		    document.getElementById('applicationTitle').innerHTML = '<div class="row"><div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><div class="titleIcon"><img src="./img/backgrounds/koryoToolsBackground.png" class="img-responsive"></div></div><div class="col-xs-8 col-sm-8 col-md-8 col-lg-8"><span class="title main-title">' + applicationTitleMessage + '</span></div><div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><button type="button" class="btn btn-default aboutButton" data-toggle="modal" data-target="#aboutModal"><img class="img-responsive" src="./img/icons/info.png"/></button></div>';
+		    document.getElementById('applicationTitle').innerHTML = '<div class="row"><div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><div class="titleIcon"><img src="./img/backgrounds/koryoToolsBackground.png" class="img-responsive"></div></div><div class="col-xs-7 col-sm-7 col-md-7 col-lg-7"><span class="title main-title">' + applicationTitleMessage + '</span></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><button type="button" class="btn btn-default aboutButton" data-toggle="modal" data-target="#aboutModal"><img class="img-responsive" src="./img/icons/info.png"/></button></div><div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><button type="button" class="btn btn-default settingButton" data-toggle="modal" data-target="#settingModal"><img class="img-responsive" src="./img/icons/setting-icon.png"/></button></div>';
 		    
 		    jQuery.i18n.prop('jeuCreeParMessage');
 		    document.getElementById('jeuCreePar').innerHTML = jeuCreeParMessage;
-		    
 		    jQuery.i18n.prop('informationsSurLeJeuMessage');
 		    document.getElementById('informationsSurLeJeu').innerHTML = informationsSurLeJeuMessage;
-		    
 		    jQuery.i18n.prop('applicationCreeeParMessage');
 		    document.getElementById('applicationCreeePar').innerHTML = applicationCreeeParMessage;
-		    
 		    jQuery.i18n.prop('applicationVersionLabelMessage');
 		    document.getElementById('applicationVersionLabel').innerHTML = applicationVersionLabelMessage;
-		    
 		    jQuery.i18n.prop('closeButtonLabelMessage');
-		    document.getElementById('closeButtonLabel').innerHTML = closeButtonLabelMessage;
+		    document.getElementById('closeAboutButtonLabel').innerHTML = closeButtonLabelMessage;
+		    
+		    jQuery.i18n.prop('langueLabelMessage');
+		    document.getElementById('langueLabel').innerHTML = langueLabelMessage;
+		    document.getElementById('closeSettingButtonLabel').innerHTML = closeButtonLabelMessage;
 		    
 		    jQuery.i18n.prop('precogCardNameMessage');
 		    document.getElementById('precogCardName').innerHTML = precogCardNameMessage;
@@ -241,7 +241,36 @@
                 1.1.0
               </div>
             </div>
-            <button type="button" class="btn btn-default pull-right closeButton" data-dismiss="modal"><div id="closeButtonLabel"></div></button>
+            <button type="button" class="btn btn-default pull-right closeButton" data-dismiss="modal"><div id="closeAboutButtonLabel"></div></button>
+          </div>
+        </div>
+	  </div>
+	</div>
+    <div id="settingModal" class="modal fade">
+	  <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- dialog body -->
+          <div class="modal-body clearfix">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <button type="button" class="close closeCross" data-dismiss="modal">&times;</button>
+              </div>
+            </div>
+            <form action="" name="settingForm">
+              <div class="row">
+                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 settingLabel">
+                  <div id="langueLabel"></div>
+                </div>
+                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 settingValue">
+                  <select id="language" onchange="saveLanguage();"> 
+                    <option value="de">Deutsch</option>
+                    <option value="en">English</option> 
+                    <option value="fr">Français</option> 
+                  </select> 
+                </div>
+              </div>
+            </form>
+            <button type="button" class="btn btn-default pull-right closeButton" data-dismiss="modal"><div id="closeSettingButtonLabel"></div></button>
           </div>
         </div>
 	  </div>
