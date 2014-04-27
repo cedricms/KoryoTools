@@ -37,12 +37,15 @@
 		    document.getElementById('applicationCreeePar').innerHTML = applicationCreeeParMessage;
 		    jQuery.i18n.prop('applicationVersionLabelMessage');
 		    document.getElementById('applicationVersionLabel').innerHTML = applicationVersionLabelMessage;
-		    jQuery.i18n.prop('closeButtonLabelMessage');
-		    document.getElementById('closeAboutButtonLabel').innerHTML = closeButtonLabelMessage;
+		    jQuery.i18n.prop('closeAboutButtonLabelMessage');
+		    document.getElementById('closeAboutButtonLabel').innerHTML = closeAboutButtonLabelMessage;
 		    
 		    jQuery.i18n.prop('langueLabelMessage');
 		    document.getElementById('langueLabel').innerHTML = langueLabelMessage;
-		    document.getElementById('closeSettingButtonLabel').innerHTML = closeButtonLabelMessage;
+		    jQuery.i18n.prop('saveSettingButtonLabelMessage');
+		    document.getElementById('saveSettingButtonLabel').innerHTML = saveSettingButtonLabelMessage;
+		    jQuery.i18n.prop('closeSettingButtonLabelMessage');
+		    document.getElementById('closeSettingButtonLabel').innerHTML = closeSettingButtonLabelMessage;
 		    
 		    jQuery.i18n.prop('precogCardNameMessage');
 		    document.getElementById('precogCardName').innerHTML = precogCardNameMessage;
@@ -256,21 +259,35 @@
                 <button type="button" class="close closeCross" data-dismiss="modal">&times;</button>
               </div>
             </div>
-            <form action="" name="settingForm">
-              <div class="row">
-                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 settingLabel">
-                  <div id="langueLabel"></div>
+            <div class="row">
+              <form action="" id="settingForm" name="settingForm">
+                <div class="row">
+                  <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 settingLabel">
+                    <div id="langueLabel"></div>
+                  </div>
+                  <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 settingValue">
+                    <select id="language"> 
+                      <option value="de">Deutsch</option>
+                      <option value="en">English</option> 
+                      <option value="fr">Français</option> 
+                    </select> 
+                  </div>
                 </div>
-                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 settingValue">
-                  <select id="language" onchange="saveLanguage();"> 
-                    <option value="de">Deutsch</option>
-                    <option value="en">English</option> 
-                    <option value="fr">Français</option> 
-                  </select> 
-                </div>
+              </form>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                &nbsp;
               </div>
-            </form>
-            <button type="button" class="btn btn-default pull-right closeButton" data-dismiss="modal"><div id="closeSettingButtonLabel"></div></button>
+            </div>
+            <div class="row">
+              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 centered">
+                <button type="button" class="btn btn-default closeButton" data-dismiss="modal"><div id="closeSettingButtonLabel"></div></button>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 centered">
+                <button type="button" class="btn btn-default closeButton" data-dismiss="modal" onclick="saveSettings();"><div id="saveSettingButtonLabel"></div></button>
+              </div>
+            </div>
           </div>
         </div>
 	  </div>
