@@ -46,14 +46,32 @@ function initTabLinkActions() {
   });
 }
 
+function supportsHtml5Ttorage() {
+  try {
+	return 'localStorage' in window && window['localStorage'] !== null;
+  } catch (e) {
+	return false;
+  }
+}
+
 function initLanguages() {
   var userLang = navigator.language || navigator.userLanguage;
   userLang = userLang.substring(0,2);
-  loadBundles(userLang);
+  var localStorageLanguage = userLang;
+  
+  if (supportsHtml5Ttorage()) {
+	if((localStorage.getItem("localStorageLanguage") === null) || (localStorage.getItem("localStorageLanguage") === '')){
+	  localStorage.setItem("localStorageLanguage", localStorageLanguage);
+	} 
+	else {
+	  localStorageLanguage = localStorage.getItem("localStorageLanguage");
+	} // if
+  } // if
+  loadBundles(localStorageLanguage);
   
   var settingForm = document.getElementById("settingForm");
-  languageSelect = settingForm.elements["language"];
-  setSelectedOptionStringValue(languageSelect, userLang);
+  var languageSelect = settingForm.elements["language"];
+  setSelectedOptionStringValue(languageSelect, localStorageLanguage);
 }
 
 function getSelectedOptionIntValue(selectComponent) {
@@ -69,9 +87,7 @@ function getSelectedOptionIntValue(selectComponent) {
 }
 
 function getSelectedOptionStringValue(selectComponent) {
-	var result = '';
-	
-	var optionValue = selectComponent.options[selectComponent.selectedIndex].value;
+	var result = selectComponent.options[selectComponent.selectedIndex].value;
 	
 	return result;
 }
@@ -87,6 +103,17 @@ function setSelectedOptionStringValue(selectComponent, value) {
     } // for
 }
 
+function goToURL(pURL) {
+	window.location.href = pURL;
+}
+
 function saveSettings() {
-  alert('Save settings');
+  var settingForm = document.getElementById("settingForm");
+  var languageSelect = settingForm.elements["language"];
+  var localStorageLanguage = getSelectedOptionStringValue(languageSelect);
+  if (supportsHtml5Ttorage()) {	
+	localStorage.setItem("localStorageLanguage", localStorageLanguage);
+  } // if
+  
+  goToURL('descriptions.html');
 }
