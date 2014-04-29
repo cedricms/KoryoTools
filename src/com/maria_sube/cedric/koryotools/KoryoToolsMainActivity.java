@@ -9,6 +9,6 @@ public class KoryoToolsMainActivity extends DroidGap {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.loadUrl("file:///android_asset/www/splashScreen.html");
+        super.loadUrl("file:///android_asset/www/home.html");
     }    
 }

@@ -115,5 +115,5 @@ function saveSettings() {
 	localStorage.setItem("localStorageLanguage", localStorageLanguage);
   } // if
   
-  goToURL('descriptions.html');
+  goToURL('cardDescriptions.html');
 }

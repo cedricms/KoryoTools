@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Mobile Frame Zero Tools</title>
+    
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    
+    <script type="text/javascript" charset="utf-8" src="./js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="./js/jquery.i18n.properties-min-1.0.9.js"></script>
+    <script type="text/javascript" charset="utf-8" src="./js/koryo.js"></script>
+    
+    <script type="text/javascript">    
+      // load I18N bundles
+      jQuery(document).ready(function() {
+    	initLanguages();
+	  });
+		
+	  function loadBundles(lang) {
+	    jQuery.i18n.properties({
+	      name:'koryo', 
+          path:'i18n/', 
+		  mode:'both',
+		  language:lang, 
+		  callback: function() {
+		    jQuery.i18n.prop('showCardsMessage');
+		    document.getElementById('showCards').innerHTML = '<a class="largeButton" href="./cardDescriptions.html">' + showCardsMessage + '</a>';
+		    
+		    jQuery.i18n.prop('showFaqMessage');
+		    document.getElementById('showFaq').innerHTML = '<a class="largeButton" href="./faq.html">' + showFaqMessage + '</a>';
+	      }
+	    });
+	  }
+    </script>
+    
+    <!-- <script type="text/javascript">
+      setTimeout(function () {
+        window.location.href = "./descriptions.html";
+      }, 2000);
+    </script> -->
+    
+    <script type="text/javascript" charset="utf-8" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="./js/respond.min.js"></script>
+    
+    <link href="./css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="./css/koryo.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="pageSection">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <img src="./img/backgrounds/koryoToolsBackground.png" class="img-responsive splashscreenImage">
+        </div>
+      </div>
+      <div class="row menuButtonVerticalSpacer">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          &nbsp;
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          &nbsp;
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 centered">
+          <div class="largeButton" id="showCards"></div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          &nbsp;
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          &nbsp;
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          &nbsp;
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 centered">
+          <div class="largeButton" id="showFaq"></div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          &nbsp;
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

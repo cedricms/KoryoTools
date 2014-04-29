@@ -54,8 +54,47 @@
   font-weight : bold;
 }
 
+div.largeButton {
+  display: inline-block;
+  text-align : center;
+  width : 100%;
+}
+a.largeButton,
+a.largeButton:link,
+a.largeButton:visited {
+  background: #666;
+  color: #ff3;
+  border: solid 0.5rem #ff3;
+  border-radius: 0 2rem 0 2rem;
+  padding: 1rem;
+  margin: 0 1rem 1rem 0;
+  display: inline-block;
+  font-size: 8rem;
+  font-weight: bold;
+  text-align : center;
+  text-decoration: none;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.5);
+  width : 100%;
+}
+a.largeButton:hover,
+a.largeButton:active,
+a.largeButton:focus {
+  background: #ff3;
+  color: #666;
+  text-align : center;
+  text-decoration: none;
+}
+
+.menuButtonVerticalSpacer {
+  height : 4rem;
+}
+
 .nav>li>a {
   padding: 0.5rem 0.5rem;
+}
+
+.pageSection {
+	
 }
 
 .pageTitle {
